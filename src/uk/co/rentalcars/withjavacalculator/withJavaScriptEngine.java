@@ -1,7 +1,4 @@
-//package uk.co.rentalcars.main.trailanderror;
-//
-//import com.sun.deploy.util.ArrayUtil;
-//import com.sun.tools.javac.util.ArrayUtils;
+//package uk.co.rentalcars.withjavacalculator;
 //
 //import javax.script.ScriptEngine;
 //import javax.script.ScriptEngineManager;
@@ -9,7 +6,8 @@
 //import java.util.HashMap;
 //import java.util.Scanner;
 //
-//public class trialanderror {
+//
+//public class StringExpression {
 //
 //    public static HashMap<String, Integer> stringToInt = new HashMap<>();
 //    public static HashMap<String, String> intToString = new HashMap<>();
@@ -22,8 +20,8 @@
 //
 //        String[] aaaa = {"1", "1+2", "4"};
 //        int count = 0;
-//        for(int i=0; i<aaaa.length; i++){
-//            if (aaaa[i].contains("\\+")){
+//        for (int i = 0; i < aaaa.length; i++) {
+//            if (aaaa[i].contains("\\+")) {
 //                count = i;
 //            }
 //        }
@@ -83,7 +81,7 @@
 //
 //    }
 //
-//    public static int parseInteger (String input){
+//    public static int parseInteger(String input) {
 //        if (input.contains("\\+") && !input.contains(".")) {
 //            String[] plusNums = input.split("\\+");
 //            int result = 0;
@@ -134,7 +132,7 @@
 ////    }
 //
 //
-//    public static String stringToIntConverter (String userInput){
+//    public static String stringToIntConverter(String userInput) {
 //
 //        String check = "";
 //        String intResult = "";
@@ -156,8 +154,7 @@
 //        return intResult; // once complete, input "onetwoplusthree" will be outputted as "12+3"
 //    }
 //
-//    public static <T extends Number > String numberToStringConverter(T result)
-//    { //generics - any type that's a number
+//    public static <T extends Number> String numberToStringConverter(T result) { //generics - any type that's a number
 //
 //        String stringIn = result.toString();
 //        String check = "";
@@ -178,8 +175,7 @@
 //
 //
 //    /* uses the JavaScript engine to take a String type Math expression (e.g. "1+2+3") and return answer (int 6)*/
-//    public static int jsConverterNotDivide (String string) throws ScriptException
-//    { //throws exception because intelliJ
+//    public static int jsConverterNotDivide(String string) throws ScriptException { //throws exception because intelliJ
 //        ScriptEngineManager mgr = new ScriptEngineManager();
 //        ScriptEngine engine = mgr.getEngineByName("JavaScript");
 //
@@ -188,8 +184,7 @@
 //    }
 //
 //    /* uses the JavaScript engine which returns a double, for division */
-//    public static double jsConverterDivide (String string) throws ScriptException
-//    { //throws exception because intelliJ
+//    public static double jsConverterDivide(String string) throws ScriptException { //throws exception because intelliJ
 //        ScriptEngineManager mgr = new ScriptEngineManager();
 //        ScriptEngine engine = mgr.getEngineByName("JavaScript");
 //
@@ -197,7 +192,7 @@
 //
 //    }
 //
-//    public static void populateHashMaps () {
+//    public static void populateHashMaps() {
 //
 //        //populate stringInt
 //        stringToInt.put("zero", 0);
@@ -238,3 +233,4 @@
 //        stringSym.put("point", ".");
 //    }
 //}
+//
